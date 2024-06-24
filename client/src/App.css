@@ -1,42 +1,107 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+body {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .card {
-  padding: 2em;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5rem;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav-right-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-right-list li {
+  margin-right: 20px;
+}
+
+.first {
+  height: 200vh;
+  padding-top: 150px;
+  background: rgb(0, 18, 36);
+  background: radial-gradient(
+    circle,
+    rgba(0, 18, 36, 1) 0%,
+    rgba(9, 21, 121, 1) 35%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .card {
+  height: 30rem;
+  width: 40rem;
+  margin-left: 5rem;
+  border-radius: 40%;
+}
+
+.main .intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .element {
+  height: 30rem;
+  width: 40rem;
+  margin-right: 5rem;
+  padding-left: 5rem;
+  translate: 0 -50px;
+}
+
+.second {
+  height: 200vh;
+  background-color: #000000;
+  opacity: 0.8;
+  background-image: linear-gradient(#444cf7 1px, transparent 1px),
+    linear-gradient(to right, #444cf7 1px, #000000 1px);
+  background-size: 20px 20px;
+}
+
+.footer {
+  height: 50vh;
+  background-color: black;
 }
