@@ -12,6 +12,8 @@ function App() {
       <First />
       <Second />
       <Footer />
+      <div className="side-element left"></div>
+      <div className="side-element right"></div>
     </>
   );
 }

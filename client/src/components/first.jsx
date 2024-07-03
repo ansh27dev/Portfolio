@@ -84,85 +84,9 @@ const first = () => {
             </h1>
           </div>
         </div>
+
+        <hr />
       </div>
-      {/* <div className="extra-text">
-        <div class="carousel-wrapper">
-          <div class="carousel">
-            <div class="item">
-              <img src="https://logo.clearbit.com/apple.com" alt="apple"></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/google.com"
-                alt="Google"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/amazon.com"
-                alt="Amazon"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/microsoft.com"
-                alt="Microsoft"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/facebook.com"
-                alt="Facebook"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/netflix.com"
-                alt="Netflix"
-              ></img>
-            </div>
-            <div class="item">
-              <img src="https://logo.clearbit.com/tesla.com" alt="Testla"></img>
-            </div>
-            <div class="item">
-              <img src="https://logo.clearbit.com/nike.com" alt="Nike"></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/adidas.com"
-                alt="Addidas"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/coca-cola.com"
-                alt="Coca-Cola"
-              ></img>
-            </div>
-            <div class="item">
-              <img src="https://logo.clearbit.com/apple.com" alt="apple"></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/google.com"
-                alt="Google"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/amazon.com"
-                alt="Amazon"
-              ></img>
-            </div>
-            <div class="item">
-              <img
-                src="https://logo.clearbit.com/microsoft.com"
-                alt="Microsoft"
-              ></img>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };

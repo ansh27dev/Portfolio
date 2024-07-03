@@ -14,7 +14,6 @@ const ThreeScene = () => {
         camera={{ position: [0, 50, 100], fov: 60 }}
         style={{ height: "50vh" }}
       >
-        {" "}
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} />
         <Suspense fallback={null}>
