@@ -75,7 +75,7 @@ const second = () => {
       <br />
 
       <div className="stack">
-        <span>My Tech Stack</span>
+        <span>My Skills</span>
         <br />
         <br />
         <div className="slider">
