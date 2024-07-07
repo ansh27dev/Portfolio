@@ -1,5 +1,4 @@
 import React from "react";
-import coder from "../assets/programmer.png";
 import ThreeScene from "./threeScene";
 
 function typewriter() {
@@ -66,7 +65,7 @@ function typewriter() {
 const first = () => {
   typewriter();
   return (
-    <div className="first">
+    <div className="first" id="first">
       <div className="main">
         <ThreeScene></ThreeScene>
         <div className="intro card">
@@ -84,6 +83,8 @@ const first = () => {
             </h1>
           </div>
         </div>
+        <br />
+        <br />
 
         <hr />
       </div>

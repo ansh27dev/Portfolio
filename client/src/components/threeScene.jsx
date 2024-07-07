@@ -1,11 +1,8 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
-function Model({ url }) {
-  const { scene } = useGLTF(url);
-  return <primitive object={scene} />;
-}
+import Model from "./model";
 
 const ThreeScene = () => {
   return (
@@ -16,9 +13,7 @@ const ThreeScene = () => {
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 5]} />
-        <Suspense fallback={null}>
-          <Model url="/models/pc/scene.gltf" />
-        </Suspense>
+        <Model />
         <OrbitControls autoRotate autoRotateSpeed={5} enableZoom={false} />
       </Canvas>
     </div>
