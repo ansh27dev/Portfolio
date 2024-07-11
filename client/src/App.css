@@ -7,8 +7,8 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  cursor: url("./assets/cursor-default-outline.svg"), auto;
 }
-
 body {
   color: rgb(0, 0, 0);
   background-color: #19142a;
