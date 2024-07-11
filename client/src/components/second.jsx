@@ -16,9 +16,9 @@ const second = () => {
           </div>
           <div className="pright text">
             {" "}
-            A platform/portal that provides allows donating and pooling used
-            books in local community library, so that books need not to be
-            discarded(wasted) and will be borrowed and used in meaningful way,
+            A platform/portal that allows donating and pooling used books in
+            local community library, so that books need not to be
+            discarded/wasted and will be borrowed and used in meaningful way,
             thereby fostering a vibrant and inclusive local community of
             readers.
           </div>
@@ -62,10 +62,8 @@ const second = () => {
             <img src={VideoCall} alt="" />
           </div>
           <div className="pright text">
-            Our video call app provides seamless, high-definition video
-            communication, allowing you to connect with anyone, anywhere, at any
-            time. Enjoy crystal-clear video and audio with a user-friendly
-            interface, making every conversation feel personal and engaging.
+            A video calling app that provides seamless video communication,
+            allowing you to connect with anyone, anywhere, at any time.
           </div>
         </div>
       </div>
