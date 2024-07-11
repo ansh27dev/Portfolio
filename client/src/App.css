@@ -341,6 +341,21 @@ hr {
   margin-top: 0px;
   background-color: transparent;
   padding: 4em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+}
+
+.slide-wrap {
+  width: 120%;
+  height: 130px;
+  background-color: white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 @keyframes scroll {
