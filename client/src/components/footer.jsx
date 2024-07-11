@@ -48,10 +48,7 @@ const footer = () => {
             <i className="fab fa-linkedin"></i>
             <span></span>
           </a>
-          <a
-            href="https://github.com/ansh27dev/ansh27dev"
-            className="icon-button github"
-          >
+          <a href="https://github.com/ansh27dev" className="icon-button github">
             <i className="fab fa-github"></i>
             <span></span>
           </a>

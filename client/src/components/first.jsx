@@ -1,5 +1,20 @@
-import React from "react";
-import ThreeScene from "./threeScene";
+import React, { useState, useEffect, useCallback } from "react";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useLoader } from "./loader";
+
+let Model = async () => {
+  let gltf = await useLoader(GLTFLoader, "/models/pc/scene.gltf");
+  console.log("DEBUG: gltf scene loaded:", gltf);
+  console.log("DEBUG: gltf scene:", gltf.scene);
+
+  return (
+    <>
+      <primitive object={gltf.scene} scale={[1, 1, 1]} />
+    </>
+  );
+};
 
 function typewriter() {
   var TxtType = function (el, toRotate, period) {
@@ -63,7 +78,35 @@ function typewriter() {
 }
 
 const first = () => {
+  const [loading, setLoading] = useState(true);
+  const [model, setModel] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    if (loading) {
+      loadModel();
+    }
+  }, [loading]);
+
+  const loadModel = async () => {
+    console.log("DEBUG: loadModel function called");
+    await Model()
+      .then((MyModel) => {
+        console.log("DEBUG: MyModel:", MyModel);
+        setModel(MyModel);
+      })
+      .catch((err) => {
+        setError(err);
+        console.log("DEBUG: error occurred:", error);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
+  console.log("DEBUG: Rendering ThreeScene component");
   typewriter();
+
   return (
     <div className="first" id="first">
       <div class="custom-shape-divider-top-1720703134">
@@ -80,7 +123,27 @@ const first = () => {
         </svg>
       </div>
       <div className="main">
-        <ThreeScene></ThreeScene>
+        <div className="canvas-container">
+          {loading ? (
+            <div className="loading">
+              <h1>Loading...</h1>
+            </div>
+          ) : (
+            <Canvas
+              camera={{ position: [0, 50, 100], fov: 60 }}
+              style={{ height: "50vh" }}
+            >
+              <ambientLight intensity={0.5} />
+              <directionalLight position={[5, 5, 5]} />
+              {model}
+              <OrbitControls
+                autoRotate
+                autoRotateSpeed={5}
+                enableZoom={false}
+              />
+            </Canvas>
+          )}
+        </div>
         <div className="intro card">
           <div className="text">
             {" "}
