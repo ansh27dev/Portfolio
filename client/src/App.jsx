@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar";
 import First from "./components/first";
@@ -11,7 +10,7 @@ function App() {
       <Navbar />
       <First />
       <Second />
-      <Footer />
+      <Footer className="footer1" />
       <div className="side-element left"></div>
       <div className="side-element right"></div>
     </div>
