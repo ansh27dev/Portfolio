@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { useLoader } from "./loader";
+import { useLoader } from "./js/loader";
 import "./css/first.css";
 
 let Model = async () => {
@@ -149,7 +149,7 @@ const First = () => {
           <div className="intro card">
             <div className="text">
               {" "}
-              <h1>
+              <h2>
                 <a
                   href=""
                   className="typewrite"
@@ -158,11 +158,9 @@ const First = () => {
                 >
                   <span className="wrap"></span>
                 </a>
-              </h1>
+              </h2>
             </div>
           </div>
-
-          <hr />
         </div>
       </div>
     </div>

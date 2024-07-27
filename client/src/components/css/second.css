@@ -16,9 +16,9 @@
   font-weight: 500;
   color: #bcd53e;
   font-family: "Playwrite AU QLD", cursive;
-  margin-bottom: 2rem;
+  margin: 4rem;
+  margin-bottom: 5rem;
   text-align: center;
-  transform: translateY(-80px);
 }
 
 .projects {

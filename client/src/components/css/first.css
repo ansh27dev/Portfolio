@@ -1,5 +1,5 @@
 .first {
-  height: 100vh;
+  height: 90vh;
   padding-top: 50px;
 }
 
@@ -10,6 +10,8 @@
 }
 .text {
   text-align: center;
+  color: #ffffff;
+  width: 100%;
 }
 
 .main {
@@ -20,8 +22,8 @@
 }
 
 .main .card {
-  height: auto;
-  width: 90%;
+  height: 10rem;
+  width: 100%;
   max-width: 40rem;
   border-radius: 20px;
   padding: 2rem;
@@ -31,7 +33,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-50px);
+  width: 100%;
 }
 
 .canvas-container {
