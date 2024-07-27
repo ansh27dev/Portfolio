@@ -33,9 +33,9 @@
   padding: 20px;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow-y: auto;
 }
+
 .input-line {
   display: flex;
 }

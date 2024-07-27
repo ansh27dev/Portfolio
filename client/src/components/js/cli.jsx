@@ -6,7 +6,7 @@ export const useCli = () => {
     const output = document.getElementById("output");
 
     const commands = {
-      help: "Available commands:  name, bio, skills, contact",
+      help: "Available commands:  name, bio, skills, contact, clear",
       name: "Hi, I am Ansh Gupta.",
       bio: "I am a fullstack developer",
       skills: "I am proficient MERN stack",
@@ -19,6 +19,15 @@ export const useCli = () => {
       if (event.key === "Enter") {
         const input = commandInput.value.trim();
         console.log("User input:", input);
+
+        if (input === "clear") {
+          output.innerHTML = "";
+          commandInput.value = "";
+          output.innerText = "";
+          output.scrollTop = output.scrollHeight;
+
+          return;
+        }
 
         if (input) {
           const outputLine = document.createElement("div");
