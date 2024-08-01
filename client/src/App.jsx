@@ -13,8 +13,6 @@ function App() {
       <Terminal></Terminal>
       <Second />
       <Footer className="footer1" />
-      <div className="side-element left"></div>
-      <div className="side-element right"></div>
     </div>
   );
 }
