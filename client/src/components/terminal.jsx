@@ -1,4 +1,3 @@
-import React from "react";
 import { useCli } from "./js/cli";
 import "./css/cli.css";
 

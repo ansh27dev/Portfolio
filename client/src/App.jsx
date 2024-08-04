@@ -10,7 +10,7 @@ function App() {
     <div className="page">
       <Navbar />
       <First />
-      <Terminal></Terminal>
+      <Terminal />
       <Second />
       <Footer className="footer1" />
     </div>

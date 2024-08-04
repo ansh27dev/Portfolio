@@ -1,4 +1,3 @@
-import React from "react";
 import library from "../assets/project_img/homepage.png";
 import food from "../assets/project_img/foodpage.png";
 import VideoCall from "../assets/project_img/videoCall.png";

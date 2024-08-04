@@ -1,4 +1,3 @@
-import React from "react";
 import "./css/footer.css";
 
 const footer = () => {
@@ -20,7 +19,6 @@ const footer = () => {
 
           <div className="info">
             Hi, I am Ansh, a Fullstack Developer. I am familiar with Mern Stack.
-            I am open to Freelance and work.
           </div>
         </div>
         <br />
